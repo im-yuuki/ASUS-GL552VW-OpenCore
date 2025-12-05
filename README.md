@@ -2,20 +2,19 @@
 ***Built with OpenCore 1.0.6 release, tested with macOS Sequoia 15.7.2***
 
 > [!WARNING]
-> This build is using MacbookPro16,4 model, which spectifications are completely different to ASUS GL552VW.
-> It is not guaranteed to work on your machine. Use at your own risk.
+> Apple Secure Boot and SIP is disabled in this version.
 
 ### Works
-- [x] GPU Acceleration (Intel HD 530, but I spoof it to Intel HD 630)
+- [x] GPU Acceleration (iGPU spoofed to Intel HD 630)
 - [x] Audio (Conexant CX20751)
 - [x] HDMI output
 - [x] Battery status
 - [x] Ethernet (RTL8111)
 - [x] SATA drives
 - [x] All USB ports
-- [x] Keyboard (PS2)
-- [x] Wifi (itlwm + HeliPort)
-- [X] Opencore GUI bootloader
+- [x] Laptop keyboard (PS2)
+- [x] Wi-Fi (Airportitlwm | Need OCLP root patch, see below)
+- [x] Bluetooth
 
 ### Patch DSDT to get them working.
 - [ ] Touchpad (ELAN1000)
@@ -26,13 +25,21 @@
 - [ ] Power management
 
 ### Not works
-- [ ] Bluetooth
 - [ ] NVIDIA GPU
 - [ ] Airdrop (due to limitations of Airportitlwm.kext)
 
+> [!NOTE]
+> Follow these steps to patch Wi-Fi functionality.
+> 1. Edit [config.plist](./EFI/OC/config.plist), remove the "#" symbol in the key `/DeviceProperties/Add/#PciRoot(0x0)/Pci(0x1c,0x0)/Pci(0x0,0x0)` (to enable ID spoof).
+> 2. Boot to macOS, install OpenCore Legacy Patcher, select model `MacBookPro13,3`, apply root patches.
+> 3. (Revert step 1) Put the "#" symbol back to the key which you modified.
+> 4. Reboot, enjoy.
+> **Wi-Fi is not usable in macOS recovery. If you use online installers, you'll need an Ethernet connection**
+
 #### Known issues
-- The primary screen doesn't work if an external monitor connected during boot, result in black screen.
-- Jumping cursor sometimes when using touchpad (I'd try to fix it soon)
+...
 
 #### License
 [MIT License](./LICENSE), all Kexts belong to their owners with their licenses.
+
+***It is not guaranteed to work on your machine. Use at your own risk.***

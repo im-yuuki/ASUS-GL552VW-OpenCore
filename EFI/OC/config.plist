@@ -270,6 +270,31 @@
 				<key>layout-id</key>
 				<data>AAAAFQ==</data>
 			</dict>
+			<key>#PciRoot(0x0)/Pci(0x1c,0x0)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>#NOTE</key>
+				<string>This is for faking the Intel Wi-Fi card to Broadcom</string>
+				<key>compatible</key>
+				<string>pci106b,117</string>
+				<key>device-id</key>
+				<data>oEMAAA==</data>
+				<key>device_type</key>
+				<string>Network controller</string>
+				<key>IOName</key>
+				<string>pci14e4,43a0</string>
+				<key>model</key>
+				<string>BCM4360 802.11ac Wireless Network Adapter</string>
+				<key>name</key>
+				<string>pci14e4,43a0</string>
+				<key>pci-aspm-default</key>
+				<integer>0</integer>
+				<key>subsystem-id</key>
+				<data>FwEAAA==</data>
+				<key>subsystem-vendor-id</key>
+				<data>axAAAA==</data>
+				<key>vendor-id</key>
+				<data>5BQAAA==</data>
+			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
@@ -321,13 +346,31 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
-				<string>itlwm.kext</string>
+				<string>IntelBluetoothFirmware.kext</string>
 				<key>Comment</key>
-				<string>itlwm.kext</string>
+				<string>IntelBluetoothFirmware.kext</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
-				<string>Contents/MacOS/itlwm</string>
+				<string>Contents/MacOS/IntelBluetoothFirmware</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>IOSkywalkFamily.kext</string>
+				<key>Comment</key>
+				<string>IOSkywalkFamily.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/IOSkywalkFamily</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -627,6 +670,24 @@
 				<key>Arch</key>
 				<string>Any</string>
 				<key>BundlePath</key>
+				<string>AMFIPass.kext</string>
+				<key>Comment</key>
+				<string>AMFIPass.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/AMFIPass</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
 				<string>AppleALC.kext</string>
 				<key>Comment</key>
 				<string>AppleALC.kext</string>
@@ -652,6 +713,24 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/AsusSMC</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>BlueToolFixup.kext</string>
+				<key>Comment</key>
+				<string>BlueToolFixup.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/BlueToolFixup</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -706,6 +785,42 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/iBridged</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>IntelBTPatcher.kext</string>
+				<key>Comment</key>
+				<string>IntelBTPatcher.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/IntelBTPatcher</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>IO80211FamilyLegacy.kext</string>
+				<key>Comment</key>
+				<string>IO80211FamilyLegacy.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/IO80211FamilyLegacy</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -803,6 +918,42 @@
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>IO80211FamilyLegacy.kext/Contents/PlugIns/AirPortBrcmNIC.kext</string>
+				<key>Comment</key>
+				<string>AirPortBrcmNIC.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/AirPortBrcmNIC</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>Arch</key>
+				<string>Any</string>
+				<key>BundlePath</key>
+				<string>AirportItlwm.kext</string>
+				<key>Comment</key>
+				<string>AirportItlwm.kext</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/AirportItlwm</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
 		</array>
 		<key>Block</key>
 		<array>
@@ -828,7 +979,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Identifier</key>
 				<string>com.apple.iokit.IOSkywalkFamily</string>
 				<key>MaxKernel</key>
@@ -1361,7 +1512,7 @@
 			<key>ScanPolicy</key>
 			<integer>0</integer>
 			<key>SecureBootModel</key>
-			<string>j215</string>
+			<string>Disabled</string>
 			<key>Vault</key>
 			<string>Optional</string>
 		</dict>
@@ -1436,18 +1587,22 @@
 			</dict>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
-				<key>ForceDisplayRotationInEFI</key>
-				<integer>0</integer>
-				<key>SystemAudioVolume</key>
-				<data>Rg==</data>
+				<key>bluetoothExternalDongleFailed</key>
+				<data>AA==</data>
+				<key>bluetoothInternalControllerInfo</key>
+				<data>AAAAAAAAAAAAAAAAAAA=</data>
 				<key>boot-args</key>
 				<string>-v debug=0x100 keepsyms=1 alcid=21 -wegnoegpu -igfxnotelemetryload swd_panic=1 -no_compat_check agdpmod=vit9696 revpatch=sbvmm</string>
+				<key>csr-active-config</key>
+				<data>AwgAAA==</data>
+				<key>ForceDisplayRotationInEFI</key>
+				<integer>0</integer>
 				<key>prev-lang:kbd</key>
 				<string>en-US:0</string>
-				<key>csr-active-config</key>
-				<data>AAAAAA==</data>
 				<key>run-efi-updater</key>
 				<string>No</string>
+				<key>SystemAudioVolume</key>
+				<data>Rg==</data>
 			</dict>
 		</dict>
 		<key>Delete</key>
@@ -1462,6 +1617,8 @@
 			</array>
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<array>
+				<string>bluetoothExternalDongleFailed</string>
+				<string>bluetoothInternalControllerInfo</string>
 				<string>boot-args</string>
 				<string>ForceDisplayRotationInEFI</string>
 			</array>
@@ -1511,10 +1668,10 @@
 		<dict>
 			<key>AdviseFeatures</key>
 			<false/>
-			<key>MLB</key>
-			<string>C02146404GU0000CB</string>
 			<key>MaxBIOSVersion</key>
 			<false/>
+			<key>MLB</key>
+			<string>C02146404GU0000CB</string>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
@@ -1730,10 +1887,10 @@
 			<false/>
 			<key>TextRenderer</key>
 			<string>BuiltinGraphics</string>
-			<key>UIScale</key>
-			<integer>0</integer>
 			<key>UgaPassThrough</key>
 			<false/>
+			<key>UIScale</key>
+			<integer>0</integer>
 		</dict>
 		<key>ProtocolOverrides</key>
 		<dict>
