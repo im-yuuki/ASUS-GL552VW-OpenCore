@@ -8,11 +8,27 @@
 		<array>
 			<dict>
 				<key>Comment</key>
+				<string>ASUS ATKACPI and Hotkeys</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-ATKD.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>Faked Embedded Controller (Laptop)</string>
 				<key>Enabled</key>
 				<true/>
 				<key>Path</key>
 				<string>SSDT-EC.aml</string>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Enable GPIO Controller (Laptop)</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Path</key>
+				<string>SSDT-GPI0.aml</string>
 			</dict>
 			<dict>
 				<key>Comment</key>
